@@ -8,24 +8,21 @@ body {
 
 .container {
   width: 940px;
-  margin: 0px;
+  margin-top: 0px;
   margin-right: auto;
+  margin-bottom: 0px;
   margin-left: auto;
   padding: 0px;
   padding-right: 10px;
   padding-left: 10px;
-  border: 1px solid rgb(48, 140, 130);
+  border: 3px dotted rgb(48, 140, 130);
 }
 
-.main-header {
-  margin-bottom: 60px;
-  border: 1px dotted rgb(22, 244, 57);
-}
-
-.main-header-layout {
+.main-header-flex {
   display: flex;
   justify-content: space-between;
   border: 1px dotted rgb(255, 224, 13);
+  margin-bottom: 60px;
 }
 
 .main-navigation {
@@ -41,6 +38,7 @@ body {
 .index-logo {
   width: 368px;
   height: 204px;
+  margin-top: 0px;
   margin-right: auto;
   margin-bottom: 25px;
   margin-left: auto;
@@ -48,46 +46,46 @@ body {
 }
 
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 35px;
 }
 
-.features-layout {
+.features-flex {
   display: flex;
   justify-content: space-between;
 }
 
 .features-item {
   width: 300px;
-  /* минимальная высота только для оформления сетки */
-  min-height: 175px;
+  min-height: 170px;
   border: 2px dotted rgb(246, 15, 15);
 }
 /* говно костыль для марджина между блоками */
 .index-content {
-  margin-bottom: 35px;
-  padding: 50px 80px;
+  margin-top: 35px;
 }
 
-.index-content-layout {
+.index-content-flex {
   display: flex;
   justify-content: space-between;
   border: 1px solid rgb(88, 11, 250);
 }
 
 .index-content-left {
-  width: 380px;
-  /* мин-высота только для оформления сетки */
-  min-height: 330px;
-
+  width: 390px;
+  min-height: 313px;
   border: 1px dotted rgb(255, 224, 13);
+  margin-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .index-content-right {
   width: 310px;
-  /* мин-высота только для оформления сетки */
-  min-height: 330px;
-
+  min-height: 313px;
   border: 1px dotted rgb(255, 224, 13);
+  margin-right: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .main-footer {
@@ -95,7 +93,7 @@ body {
   margin-top: 65px;
 }
 
-.footer-layout {
+.footer-flex {
   display: flex;
   justify-content: space-between;
   border: 2px solid rgb(250, 150, 1)
@@ -104,16 +102,16 @@ body {
 .footer-contacts {
   width: 320px;
   border: 1px dotted rgb(88, 11, 250);
-  margin-right: auto;
 }
 
 .footer-social {
-  width: 180px;
+  width: 160px;
+  margin-left: 70px;
+  margin-right: 240px;
   border: 1px dotted rgb(88, 11, 250);
 }
 
 .footer-copyright {
-  width: 160px;
-  margin-left: auto;
+  width: 150px;
   border: 1px dotted rgb(88, 11, 250);
 }

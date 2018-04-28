@@ -106,9 +106,16 @@ body {
 .index-logo {
   width: 368px;
   height: 204px;
+  margin: 0;
   margin-right: auto;
   margin-bottom: 25px;
   margin-left: auto;
+  background: url
+}
+
+.index-logo img {
+  width: 368px;
+  height: 204px;
 }
 
 .features {
@@ -122,9 +129,22 @@ body {
 
 .features-item {
   width: 300px;
-  /* минимальная высота только для оформления сетки */
-  min-height: 175px;
+  text-align: center;
 }
+
+.features-name {
+  display: block;
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 66px;
+  padding-bottom: 35px;
+}
+
+.features-item p {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 /* говно костыль для марджина между блоками */
 .index-content {
   margin-bottom: 35px;
@@ -174,6 +194,17 @@ body {
 
 
 /* Стили для рамок */
+body {
+  border: 1px solid rgb(151, 0, 255)
+}
+
+.container {
+  border: 1px solid rgb(72, 160, 193)
+}
+
+.main-header {
+  border: 1px solid rgb(242, 159, 229)
+}
 
 .user-block {
  border: 1px solid rgb(223, 116, 95);
@@ -183,15 +214,44 @@ body {
   border: 1px dotted rgb(209, 252, 85);
 }
 
-.login:hover {
+.features {
+  border: 1px solid rgb(223, 116, 95);
 }
 
-.login::before {
+.features-layout {
+  border: 1px dotted rgb(209, 252, 85);
 }
 
-.index-logo {
+.features-item {
+  border: 1px dotted rgb(192, 72, 221);
 }
 
+.index-content {
+  border: 1px dotted rgb(170, 41, 232);
+}
+
+.index-content-left {
+  border: 1px dotted rgb(77, 203, 224);
+}
+
+.index-content-right {
+  border: 1px dotted rgb(251, 21, 24);
+}
+
+.main-footer {
+}
+
+.footer-layout {
+}
+
+.footer-contacts {
+}
+
+.footer-social {
+}
+
+.footer-copyright {
+}
 
 /* спрайты*/
 

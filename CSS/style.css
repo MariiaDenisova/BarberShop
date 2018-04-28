@@ -110,7 +110,6 @@ body {
   margin-right: auto;
   margin-bottom: 25px;
   margin-left: auto;
-  background: url
 }
 
 .index-logo img {
@@ -137,7 +136,7 @@ body {
   display: block;
   font-size: 30px;
   line-height: 42px;
-  margin-bottom: 65px;
+  margin-bottom: 30px;
   padding-bottom: 35px;
 }
 
@@ -206,8 +205,14 @@ body {
   margin-left: auto;
 }
 
+/* box-sizing */
+
+body {
+  /* box-sizing: border-box; */
+}
 
 /* Стили для рамок */
+/*
 body {
   border: 1px solid rgb(151, 0, 255)
 }
@@ -239,6 +244,15 @@ body {
 .features-item {
   border: 1px dotted rgb(192, 72, 221);
 }
+
+.features-name {
+  border: 1px dotted rgb(215, 66, 137);
+}
+
+.features-name::before  {
+  border: 1px solid rgb(125, 185, 167);
+}
+
 .features-item p {
   border: 2px solid rgb(204, 167, 32);
 }
@@ -272,7 +286,7 @@ body {
 
 /* спрайты*/
 
-.sprite {
+/* .sprite {
     background-image: url(../Pictures/sprite.png);
     background-repeat: no-repeat;
     display: block;
@@ -300,4 +314,4 @@ body {
     width: 25px;
     height: 16px;
     background-position: -10px -131px;
-}
+} */

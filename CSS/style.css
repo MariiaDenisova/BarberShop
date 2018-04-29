@@ -2,7 +2,7 @@ body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  background: #000000 url("../pictures/background2.jpg") no-repeat center top;
+  background: #070707 url("../pictures/background1.jpg") no-repeat center top;
   color: #ffffff;
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: bold;
@@ -315,46 +315,99 @@ body {
 }
 
 .main-footer {
-  margin-top: 65px;
-  padding-top: 58px;
-  padding-bottom: 32px;
+  margin-top: 66px;
+  padding-top: 57px;
+  padding-bottom: 39px;
+  color: #ffffff;
+  background-color: #222222 url("pictures/footer-background.jpg");
 }
 
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 60px;
+  min-height: 90px;
 }
 
-.footer-contacts .btn {
+.footer-contacts a {
+  color: #ffffff;
+  padding: 0;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
+
+
+.footer-contacts p {
+  margin: 0;
 }
 
 .footer-social {
-  position: relative;
   float: left;
-  width: 160px;
-  padding-right: 10px;
-  padding-right: 10px;
+  width: 180px;
+  min-height: 90px;
+  text-align: center;
+}
+
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .social-btn {
-  position: absolute;
+  display: inline-block;
   width: 43px;
   height: 43px;
+  margin: 0 2px;
+  background: #000000 url("../pictures/sprite.png") no-repeat center;
+  /* прячем текст */
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  background-color: #ffffff;
 }
 
 .social-btn-vk {
-
+  background-position: -1px -198px;
 }
 
+.social-btn-fb {
+  background-position: 5px -37px;
+}
+
+.social-btn-inst {
+  background-position: 2px -119px;
+}
+
+.social-btn-vk:hover {
+  background-position: -1px -234px;
+}
+
+.social-btn-fb:hover {
+  background-position: 5px -78px;
+}
+
+.social-btn-inst:hover {
+  background-position: 2px -161px;
+}
 
 .footer-copyright {
   float: right;
-  width: 150px;
-
+  max-width: 180px;
 }
 
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-copyright .btn {
+  margin-right: 0;
+}
 
 /* Рамки для блочков */
 .container {
@@ -396,8 +449,11 @@ body {
 .footer-copyright {
   background-color: rgba(144, 116, 106, 0.2);
 }
+.main-footer {
+  background-color: rgba(204, 255, 1, 0.21);
+}
 
-/* спрайт с картинками */
+/* спрайт с картинками
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;

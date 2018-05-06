@@ -470,7 +470,38 @@ body {
 
 /* Особые стили для контентных тегов */
 
-.big-hea
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65p;
+
+  text-align: center;
+}
+
+.big-heading h2 {
+  background: red;
+
+  font-size: 48px;
+  line-height: 48p;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+  z-index: 2;
+  background: #f8f5f2 url("../Pictures/inner-page-background.jpg") repeat;
+}
+
+.big-heading::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #000000;
+  position: relative;
+  top: -25px;
+  z-index: 1;
+}
+
 
 
 .main-footer {
